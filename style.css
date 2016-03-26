@@ -1,0 +1,105 @@
+
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Parisienne);
+
+html, body, .wrapper{ height: 100%; margin: 0; padding: 0; }
+
+body{
+	font-family: 'Inconsolata', sans-serif;
+}
+.wrapper {
+    width: 100%;
+}
+.container{
+	position: absolute;
+	background: #fff;
+	width: 180px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	margin-top: -35px;
+	margin-left: -110px;
+	padding: 0 20px;
+}
+.logo:before {
+    content: '';
+    position: fixed;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background: rgba(207,207,207,0.3);
+    top: 50%;
+    z-index: -1;
+}
+.logo{
+	font-size: 24px;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+.logo span {
+    padding: 2px 4px;
+    color: #000;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+    margin-right: 2px;
+}
+.logo sub{
+	vertical-align: middle;
+	font-size: 18px;
+	margin-right: 0;
+	color: rgba(0,0,0,.4);
+}
+.slogan{
+	font-family: monospace;
+	color: rgba(0,0,0,.4);
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 100;
+	margin-left: 37px;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+    color: rgba(0,0,0,.4);
+    font-size: 14px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media screen and (max-width: 400px){
+	.logo:before {
+	    display: none;
+	}
+	.container{
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+	}
+}
